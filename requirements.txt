@@ -1,0 +1,5 @@
+#DON'T TRY TO CHANGE THE CODE,YOU ARE IN CONTROL.
+
+pytube
+colorama
+fontstyle
