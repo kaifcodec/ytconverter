@@ -12,7 +12,7 @@ pkg install git -y
 
 pkg install python3 -y
 
-git clone https://github.com/Iamkaifv2/ytconverter.git
+git clone https://github.com/kaifcodec/ytconverter.git
 
 cd ytconverter.py
 
