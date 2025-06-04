@@ -1,19 +1,5 @@
 #!/usr/bin/env python3
 
-
-# /// script
-# requires-python = ">=3.9"
-# dependencies = [
-#     "colored",
-#     "fontstyle",
-#     "httpx",
-#     "yt-dlp",
-# ]
-# ///
-
-# TODO: Remove the following noqa for all the good reasons mentioned in PEP8.
-# ruff: noqa: E722
-
 import datetime
 import inspect
 import json
