@@ -1,3 +1,7 @@
 .env
-data.py
+data.json
 error_logs.txt
+__pycache__
+venv
+cookies.txt
+
