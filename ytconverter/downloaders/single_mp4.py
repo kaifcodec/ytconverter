@@ -112,6 +112,7 @@ def run():
                 [
                     "yt-dlp",
                     "-x",
+                    "--restrict-filenames",
                     "--audio-format",
                     "mp3",
                     "-o",
@@ -133,8 +134,17 @@ def run():
             return
 
     dest = Path(get_download_path("mp4"))
-    video_out = dest / f"{title}.mp4"
-    ydl_opts = {"format": selected_id, "outtmpl": str(video_out)}
+    safe_title = sanitize(title)[:60]
+    video_out = dest / f"{safe_title}.mp4"
+    ydl_opts = {
+             "format": selected_id,
+             "restrictfilenames": True,
+             "outtmpl": str(video_out)
+    }
+
+
+
+
     print("\033[36;1mStarting Video Download...\033[0m\n")
     t0 = int(time.time())
     try:
@@ -148,7 +158,7 @@ def run():
     print(f"\033[36;1mTime taken: {t1-t0} sec\033[0m")
 
     if audio_downloaded:
-        merged = dest / f"{title}_merged.mp4"
+        merged = dest / f"{safe_title}_merged.mp4"
         cmd = [
             "ffmpeg",
             "-y",

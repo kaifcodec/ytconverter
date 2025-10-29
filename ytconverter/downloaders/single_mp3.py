@@ -60,7 +60,7 @@ def run():
         dl_format = "bestaudio/best"
 
     dest = Path(get_download_path("mp3"))
-    title = sanitize(info_json.get("title", "Unknown"))
+    title = sanitize(info_json.get("title", "Unknown"))[:60]
 
     t0 = int(time.time())
     sp.run(
@@ -72,7 +72,7 @@ def run():
             "--audio-format",
             "mp3",
             "-o",
-            str(dest / "%(title)s.%(ext)s"),
+            str(dest / f"{title}.%(ext)s"),
             url,
         ],
         check=True,

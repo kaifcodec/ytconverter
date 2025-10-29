@@ -82,7 +82,7 @@ def run():
             print(apply_style(f"An error occurred: {e}", "/red/bold"))
             continue
 
-        vid_title = sanitize(info["title"])
+        vid_title = sanitize(info["title"])[:60]
         print(apply_style(f"\nStarting Video {k} Download...\n", "/cyan/bold"))
         time1 = int(time.time())
         ydl_opts = {
