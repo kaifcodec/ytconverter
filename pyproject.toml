@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "ytconverter"
-version = "4.0.2.0"
+version = "4.0.2.1"
 description = "Terminal-based YouTube video/audio downloader using yt-dlp and ffmpeg"
 readme = "README.md"
 license = {file = "LICENSE"}
