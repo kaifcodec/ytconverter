@@ -117,7 +117,7 @@ Feel free to open a pull request or submit an issue.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any questions or feedback, please open an issue or write an email on kaifcodec@gmail.com
+For any questions or feedback, open an issue or write an email on kaifcodec@gmail.com
 
 # If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
 ---
