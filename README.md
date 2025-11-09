@@ -122,5 +122,12 @@ For any questions or feedback, open an issue or write an email on kaifcodec@gmai
 # If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
 ---
 ## Stars ⭐ 
-[![Star History Chart](https://api.star-history.com/svg?repos=kaifcodec/ytconverter&type=Date)](https://star-history.com/#kaifcodec/ytconverter&Date)
+
+<a href="https://www.star-history.com/#kaifcodec/ytconverter&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=kaifcodec/ytconverter&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=kaifcodec/ytconverter&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=kaifcodec/ytconverter&type=date&legend=top-left" />
+ </picture>
+</a>
 ---
