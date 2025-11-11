@@ -34,13 +34,15 @@
 - *Audio Downloading*.: Downloads audio of any video with wide range of bitrate selection.
 - *Multiple video download*.: Now you can download multiple videos using the tool, just paste the urls one by one.
 - *Detailed Quality* : It fetches all the available resolutions for the video and let you select as per your need.
-- *Path selections* : It have inbuilt features to detect `Downloads` folder according to what platform user in.
+- *Path selections* : It has inbuilt features to detect `Downloads` folder according to what platform user in.
 - *Custom Path* : Also you can enter your suitable path for every video.
-- *Title sanitization* : It have inbuilt `re` module implementation that converts special characters to text, avoiding errors
+- *Title sanitization* : It has inbuilt `re` module implementation that converts special characters to text, avoiding errors
 - *Format Conversion*.: Convert downloaded videos into different formats such as MP3, MP4, etc.
 - *Metadata Handling* : Extract and manage metadata associated with YouTube videos.
 - *Colored output* : Colorful terminal output that make it easier to select options.
 - *Interactive CLI* : It provides interactive CLI menu that is way easier than using commands everytime.
+- *Auto Update* : You can simply run `ytconverter -U` and it will update yt-dlp and ytconverter to latest version, even it can auto detect whenever a there's a new release of `ytconverter`.
+
 - Many more features inside try them all...
 ---
 ## Screenshots
