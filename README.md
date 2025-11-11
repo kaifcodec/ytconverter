@@ -1,5 +1,6 @@
 ## YTConverter™
-![file_000000006dfc61fb9c9a2cb865da0157](https://github.com/user-attachments/assets/eadca26f-79a7-4233-90dd-1c850f50a8cc)
+<img width="1020" height="732" alt="1000136389" src="https://github.com/user-attachments/assets/ef9eef49-e366-46cd-937f-834b6d85167b" />
+
 ---
 
 <p align="center">
