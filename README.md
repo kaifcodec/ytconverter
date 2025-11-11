@@ -27,10 +27,21 @@
 ---
 `YTConverter™` is a Python-based project developed by [kaifcodec](https://github.com/kaifcodec) designed to provide a robust tool for converting YouTube videos into various formats. This tool simplifies the process of downloading and converting videos from YouTube.
 
-
 ---
+## ✅ Features
+- *Video Downloading* : Fetch videos directly from YouTube.
+- *Audio Downloading*.: Downloads audio of any video with wide range of bitrate selection.
+- *Multiple video download*.: Now you can download multiple videos using the tool, just paste the urls one by one.
+- *Detailed Quality* : It fetches all the available resolutions for the video and let you select as per your need.
+- *Path selections* : It have inbuilt features to detect `Downloads` folder according to what platform user in.
+- *Custom Path* : Also you can enter your suitable path for every video.
+- *Title sanitization* : It have inbuilt `re` module implementation that converts special characters to text, avoiding errors
+- *Format Conversion*.: Convert downloaded videos into different formats such as MP3, MP4, etc.
+- *Metadata Handling* : Extract and manage metadata associated with YouTube videos.
+- *Colored output* : Colorful terminal output that make it easier to select options.
 
-
+- Many more features inside try them all...
+---
 ## Screenshots
 <p align= "left">
  <img width="1080" height="495" alt="1000132505" src="https://github.com/user-attachments/assets/4087d8e8-5266-4fb0-8135-a51eda1fdcc1" />
@@ -87,41 +98,14 @@ install.bat # Or manually install ffmpeg and add it to PATH
 python3 ytconverter.py
 ```
 
-⚠️ The standalone script is recommended for now.  
-PyPI version is still in beta — report issues on GitHub.
 ---
-
-## Features
-- **Video Downloading**: Fetch videos directly from YouTube.
-- **Audio Downloading**: Downloads audio of any video with wide range of bitrate selection.
-- **Multiple video download**: Now you can download multiple videos using the tool, just paste the urls one by one
-- **Format Conversion**: Convert downloaded videos into different formats such as MP3, MP4, etc.
-- **Metadata Handling**: Extract and manage metadata associated with YouTube videos.
-
----
-
-
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Please take a moment to read our [CONTRIBUTING.md](CONTRIBUTING.md) guide for details on how to help make **YTConverter™** better.
-
-Feel free to open a pull request or submit an issue.
-
-
----
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For any questions or feedback, open an issue or write an email on kaifcodec@gmail.com
 
-# If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
 ---
-## Stars ⭐ 
+
+### If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
 
 <a href="https://www.star-history.com/#kaifcodec/ytconverter&type=date&legend=top-left">
  <picture>
