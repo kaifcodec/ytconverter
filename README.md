@@ -40,7 +40,7 @@
 - *Format Conversion*.: Convert downloaded videos into different formats such as MP3, MP4, etc.
 - *Metadata Handling* : Extract and manage metadata associated with YouTube videos.
 - *Colored output* : Colorful terminal output that make it easier to select options.
-
+- *Interactive CLI* : It provides interactive CLI menu that is way easier than using commands everytime.
 - Many more features inside try them all...
 ---
 ## Screenshots
