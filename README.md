@@ -41,7 +41,7 @@
 - *Metadata Handling* : Extract and manage metadata associated with YouTube videos.
 - *Colored output* : Colorful terminal output that make it easier to select options.
 - *Interactive CLI* : It provides interactive CLI menu that is way easier than using commands everytime.
-- *Auto Update* : You can simply run `ytconverter -U` and it will update yt-dlp and ytconverter to latest version, even it can auto detect whenever a there's a new release of `ytconverter`.
+- *Auto Update* : You can simply run `ytconverter -U` and it will update yt-dlp and ytconverter to latest version, even it can auto detect whenever there's a new release of `ytconverter`.
 
 - Many more features inside try them all...
 ---
