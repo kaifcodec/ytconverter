@@ -50,7 +50,8 @@
  <img width="1080" height="495" alt="1000132505" src="https://github.com/user-attachments/assets/4087d8e8-5266-4fb0-8135-a51eda1fdcc1" />
 </p>
 <p align="left">
-<img src= "https://github.com/user-attachments/assets/8e9d00ce-b698-4b1f-8870-badd5d274442" width="600" height="600"/>
+  <img width="949" height="895" alt="1000136018" src="https://github.com/user-attachments/assets/a8777e8e-834d-4555-ab3a-f48ba6ab9214" />
+
 </p>
 
 ---
