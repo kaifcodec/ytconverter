@@ -48,10 +48,12 @@
 ---
 ## Screenshots
 <p align= "left">
- <img width="1080" height="495" alt="1000132505" src="https://github.com/user-attachments/assets/4087d8e8-5266-4fb0-8135-a51eda1fdcc1" />
+ <img width="1080" height="495" alt="1000132505" src="https://github.com/user-attachments/assets/fab25d7f-0f3c-4cd4-b22c-9e13a3488466" />
+
 </p>
 <p align="left">
-<img src= "https://github.com/user-attachments/assets/8e9d00ce-b698-4b1f-8870-badd5d274442" width="600" height="600"/>
+  <img width="1080" height="946" alt="1000132190" src="https://github.com/user-attachments/assets/6954b057-1b23-44ec-bf1d-cb5fbff3c2a9" />
+
 </p>
 
 ---
