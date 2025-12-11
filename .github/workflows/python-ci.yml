@@ -1,0 +1,89 @@
+name: Python CI
+
+on:
+  push:
+   branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install colored fontstyle httpx yt-dlp
+
+    - name: Check syntax of ytconverter.py
+      run: python -m py_compile standalone/ytconverter.py
+
+  test-on-windows:
+    runs-on: windows-latest
+    needs: build
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip
+        pip install colored fontstyle httpx yt-dlp
+
+    - name: Create dummy data.json
+      shell: bash
+      run: |
+        echo "{\"Name\": \"CI User\", \"Num\": \"ci@example.com\"}" > data.json
+
+    - name: Install ffmpeg (Windows)
+      shell: pwsh
+      run: |
+        choco install ffmpeg -y
+
+    - name: Check for ffmpeg (Windows)
+      shell: pwsh
+      run: |
+        ffmpeg -version
+
+    - name: Test Single MP3 Download
+      shell: bash
+      run: |
+        echo "Starting Single MP3 Download Test"
+        printf "n\nn\nn\n1\nhttp://www.youtube.com/watch?v=dQw4w9WgXcQ\n0\n\n" | python3 standalone/ytconverter.py
+        echo "Single MP3 Download Test Finished"
+
+    - name: Test Single MP4 Download
+      shell: bash
+      run: |
+        echo "Starting Single MP4 Download Test"
+        printf "\n2\nhttp://www.youtube.com/watch?v=dQw4w9WgXcQ\n1\n\n" | python3 standalone/ytconverter.py
+        echo "Single MP4 Download Test Finished"
+
+    - name: Test Multiple MP4 Download
+      shell: bash
+      run: |
+        echo "Starting Multiple MP4 Download Test"
+        printf "n\nn\nn\n3\nhttp://www.youtube.com/watch?v=dQw4w9WgXcQ\n0\n1\n\n" | python3 standalone/ytconverter.py
+        echo "Multiple MP4 Download Test Finished"
+
+    - name: Test Exit Option
+      shell: bash
+      run: |
+        echo "Starting Exit Option Test"
+        printf "n\nn\nn\n4\n" | python3 standalone/ytconverter.py
+        echo "Exit Option Test Finished"
+

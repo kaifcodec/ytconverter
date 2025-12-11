@@ -1,0 +1,8 @@
+.env
+data.json
+error_logs.txt
+rm_cache.py
+*.txt
+__pycache__
+auto.sh
+
