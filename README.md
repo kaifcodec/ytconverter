@@ -103,12 +103,9 @@ python3 ytconverter.py
 
 ---
 
-## Contact
-For any questions or feedback, open an issue or write an email on kaifcodec@gmail.com
 
----
 
-### If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
+<!---### If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
 
 <a href="https://www.star-history.com/#kaifcodec/ytconverter&type=date&legend=top-left">
  <picture>
