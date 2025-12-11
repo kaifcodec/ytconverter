@@ -1,5 +1,6 @@
 ## YTConverter™
-<img width="1020" height="732" alt="1000136389" src="https://github.com/user-attachments/assets/ef9eef49-e366-46cd-937f-834b6d85167b" />
+<img width="1024" height="1024" alt="1000140946" src="https://github.com/user-attachments/assets/18acf4a6-254e-484c-a93d-2cf47b653dbf" />
+
 
 ---
 
