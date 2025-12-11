@@ -1,0 +1,4 @@
+yt-dlp
+fontstyle
+colored
+httpx

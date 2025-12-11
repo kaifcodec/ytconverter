@@ -1,0 +1,29 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ytconverter"
+version = "4.0.2.1"
+description = "Terminal-based YouTube video/audio downloader using yt-dlp and ffmpeg"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Kaif", email = "kafcodec@gmail.com"}
+]
+dependencies = [
+  "yt-dlp",
+  "ffmpeg-python",
+  "colored",
+  "fontstyle",
+  "httpx"
+]
+
+requires-python = ">=3.7"
+keywords = ["youtube", "downloader", "yt-dlp", "ffmpeg", "terminal", "audio", "video", "python", "youtube-downloader"]
+
+[project.urls]
+Homepage = "https://github.com/kaifcodec/ytconverter"
+
+[project.scripts]
+ytconverter = "ytconverter.__main__:main"
