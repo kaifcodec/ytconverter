@@ -1,7 +1,7 @@
 ## YTConverter™
 <img width="1024" height="700" alt="1000140947" src="https://github.com/user-attachments/assets/e0ce5970-36eb-4ddf-ba62-99c9c6f12f1b" />
 
-### Ytconverter initially had 180+ stars but it is now a new repository
+### Ytconverter used to have 180+ stars but it is a new repository now
 ---
 
 <p align="center">
