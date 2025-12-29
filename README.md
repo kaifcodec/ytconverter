@@ -84,8 +84,7 @@ sudo pacman -S ffmpeg         # Arch
 ```bash
 pip install ytconverter
 ytconverter -S
-```<img width="1072" height="344" alt="1000142597" src="https://github.com/user-attachments/assets/917f430c-a29c-41fe-ba1b-ea6bd52970aa" />
-
+```
 
 ## ⚙️ Update
 ### Update ytconverter
