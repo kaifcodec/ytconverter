@@ -71,6 +71,30 @@ def run():
             )
         )
 
+    ask_subs = input(
+        apply_style("\nDownload subtitles for all videos? (y/n): ", "/cyan/bold")
+    ).strip().lower()
+    sub_options = {}
+    cookie_path = ""
+    if ask_subs == "y":
+        print(apply_style("Note: YouTube may block subtitle extraction with HTTP 429. If that happens provide a cookies file.", "/yellow"))
+        cookie_path = input(apply_style("Enter path to cookies file for yt-dlp (optional, press Enter to skip): ", "/green")).strip()
+        lang = input(
+            apply_style("Enter subtitle language code (e.g. en) or leave blank for all: ", "/green")
+        ).strip()
+        pref_auto = input(
+            apply_style("Also download automatic subtitles if manual not available? (y/n) [y]: ", "/green")
+        ).strip().lower()
+        if pref_auto == "":
+            pref_auto = "y"
+        sub_options["writesubtitles"] = True
+        sub_options["writeautomaticsub"] = pref_auto == "y"
+        if lang:
+            sub_options["subtitleslangs"] = lang
+        sub_options["convertsubtitles"] = "srt"
+        if cookie_path:
+            sub_options["cookiefile"] = cookie_path
+
     destination = Path(get_download_path("mp4"))
     k = 1
     for url in down_list:
@@ -85,10 +109,18 @@ def run():
         vid_title = sanitize(info["title"])[:60]
         print(apply_style(f"\nStarting Video {k} Download...\n", "/cyan/bold"))
         time1 = int(time.time())
+
         ydl_opts = {
             "format": format_map[choice],
             "outtmpl": str(destination / f"{vid_title}.%(ext)s"),
+            "quiet": True,
+            "no_warnings": True,
         }
+        if sub_options:
+            for k_opt, v_opt in sub_options.items():
+                if v_opt is not None:
+                    ydl_opts[k_opt] = v_opt
+
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([url])

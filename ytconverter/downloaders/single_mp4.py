@@ -55,7 +55,6 @@ def run():
 
     title = sanitize(info.get("title", "Unknown title"))
 
-    # Display formats with size
     for idx, fmt in enumerate(formats, 1):
         res = (
             fmt.get("resolution", "Audio Only")
@@ -142,9 +141,6 @@ def run():
              "outtmpl": str(video_out)
     }
 
-
-
-
     print("\033[36;1mStarting Video Download...\033[0m\n")
     t0 = int(time.time())
     try:
@@ -185,6 +181,34 @@ def run():
 
     if Path("audio_temp").exists():
         shutil.rmtree("audio_temp", ignore_errors=True)
+
+    try:
+        ask_subs = input("\n\033[36;1mDownload subtitles for this video? (y/n): \033[0m").strip().lower()
+        if ask_subs == "y":
+            print("\033[33;1mNote: YouTube may block subtitle extraction with HTTP 429. If that happens provide a cookies file.\033[0m")
+            cookie_path = input("\033[36;1mEnter path to cookies file (optional, press Enter to skip): \033[0m").strip()
+            lang = input("\033[36;1mEnter subtitle language code (e.g. en) or leave blank for all: \033[0m").strip()
+            pref_auto = input("\033[36;1mAlso download automatic subtitles if manual not available? (y/n) [y]: \033[0m").strip().lower()
+            if pref_auto == "":
+                pref_auto = "y"
+            cmd = ["yt-dlp", "--skip-download", "--write-sub"]
+            if pref_auto == "y":
+                cmd += ["--write-auto-sub"]
+            if lang:
+                cmd += ["--sub-lang", lang]
+            cmd += ["--convert-subs", "srt"]
+            if cookie_path:
+                cmd += ["--cookies", cookie_path]
+            cmd += ["-o", str(dest / f"{safe_title}.%(ext)s")]
+            cmd += [url]
+            print("\033[36;1mDownloading subtitles...\033[0m")
+            try:
+                sp.run(cmd, check=True)
+                print("\033[32;1mSubtitles downloaded (converted to .srt where possible).\033[0m")
+            except Exception as e:
+                print(f"\033[31;1mSubtitle download error: {e}\033[0m")
+    except Exception:
+        pass
 
 if __name__=="__main__":
   run()
