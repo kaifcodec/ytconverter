@@ -4,7 +4,7 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-4.0.2-blueviolet?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Version-4.0.3-blueviolet?style=for-the-badge&logo=github" />
 <!--  <img src="https://img.shields.io/github/forks/kaifcodec/ytconverter?style=for-the-badge&logo=git" />
   <img src="https://img.shields.io/github/stars/kaifcodec/ytconverter?style=for-the-badge&logo=github" /> -->
   <img src="https://img.shields.io/github/issues/kaifcodec/ytconverter?style=for-the-badge&logo=github" />
@@ -50,7 +50,7 @@
 ---
 ## Screenshots
 <p align= "left">
- <img width="1080" height="495" alt="1000132505" src="https://github.com/user-attachments/assets/fab25d7f-0f3c-4cd4-b22c-9e13a3488466" />
+ <img width="1072" height="344" alt="1000142597" src="https://github.com/user-attachments/assets/e45decd7-4750-4d1f-b21e-4f8bb078bccc" />
 
 </p>
 <p align="left">
@@ -84,7 +84,8 @@ sudo pacman -S ffmpeg         # Arch
 ```bash
 pip install ytconverter
 ytconverter -S
-```
+```<img width="1072" height="344" alt="1000142597" src="https://github.com/user-attachments/assets/917f430c-a29c-41fe-ba1b-ea6bd52970aa" />
+
 
 ## ⚙️ Update
 ### Update ytconverter
