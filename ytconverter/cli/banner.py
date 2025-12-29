@@ -14,11 +14,13 @@ f2 = """
       ║ ♚ Email  : kaifcodec@gmail.com         ║
       ╠═════════════════════════════════════════ """
 f3 = """      ╠═▶ [𝗦𝗲𝗹𝗲𝗰𝘁 𝗔n  𝐎𝐩𝐭𝐢𝐨𝐧]  ➳
-      ╠═▶ 1. Single Music Mp3 ⏬ 🎶
-      ╠═▶ 2. Single Video ⏬ 🎥(detailed quailty & size but slow fetch)
-      ╠═▶ 3. Multiple videos ⏬ 🎥
-      ╠═▶ 4. Multiple audios ⏬ 🎶
-      ╠═▶ 5. Exit YTConverter"""
+      ╠═▶ 1. Single Music Mp3
+      ╠═▶ 2. Single Video (detailed quailty & size but slow fetch)
+      ╠═▶ 3. Multiple videos
+      ╠═▶ 4. Multiple audios
+      ╠═▶ 5. Full Playlist MP3
+      ╠═▶ 6. Full Playlist MP4
+      ╠═▶ 7. Exit YTConverter"""
 f4 = "      ╚═:➤ "
 
 des1 = apply_style(f1, "/green/bold")
