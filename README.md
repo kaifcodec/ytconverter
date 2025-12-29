@@ -36,6 +36,8 @@
 - *Video Downloading* : Fetch videos directly from YouTube.
 - *Audio Downloading*.: Downloads audio of any video with wide range of bitrate selection.
 - *Multiple video download*.: Now you can download multiple videos using the tool, just paste the urls one by one.
+- *Subtitles*: Subtitles download support.
+- *Playlist download*: Full playlist download in mp3 or mp4 format with subtitles 
 - *Detailed Quality* : It fetches all the available resolutions for the video and let you select as per your need.
 - *Path selections* : It has inbuilt features to detect `Downloads` folder according to what platform user in.
 - *Custom Path* : Also you can enter your suitable path for every video.
