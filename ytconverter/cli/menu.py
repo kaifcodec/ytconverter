@@ -7,7 +7,14 @@ from ytconverter.config import load_local_version
 from ytconverter.core.bootstrap import ensure_dependencies, setup_termux_storage
 from ytconverter.utils.update import update_self
 from ytconverter.core.version import check_version
-from ytconverter.downloaders import multi_mp3, multi_mp4, single_mp3, single_mp4
+from ytconverter.downloaders import (
+    multi_mp3,
+    multi_mp4,
+    single_mp3,
+    single_mp4,
+    playlist_mp4,
+    playlist_mp3,
+)
 from ytconverter.utils.styling import apply_style
 
 ensure_dependencies()
@@ -42,6 +49,10 @@ def main_loop():
         elif choice == "4":
             multi_mp3.run()
         elif choice == "5":
+            playlist_mp3.run()
+        elif choice == "6":
+            playlist_mp4.run()
+        elif choice == "7":
             print("Have a nice day, Bye!")
             sys.exit()
         else:
@@ -52,6 +63,3 @@ def main_loop():
             "Press [ENTER] to continue downloading another content  ", "/green/bold"
         )
         input(exitc)
-
-
-
