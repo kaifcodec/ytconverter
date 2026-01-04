@@ -84,7 +84,7 @@ sudo pacman -S ffmpeg         # Arch
 ```
 ### Install ytconverter from PyPI
 ```bash
-pip install ytconverter
+pip3 install ytconverter
 ytconverter -S
 ```
 
@@ -102,10 +102,11 @@ ytconverter -U # pypi package
 git clone https://github.com/kaifcodec/ytconverter.git
 cd ytconverter/standalone/
 install.bat # Or manually install ffmpeg and add it to PATH
+pip3 install ytconverter 
 ```
 ### Then run:
 ```bash
-python3 ytconverter.py
+ytconverter -S
 ```
 
 ---
