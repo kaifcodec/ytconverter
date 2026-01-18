@@ -18,7 +18,6 @@
 
 ---
 
-### Ytconverter used to have 180+ stars but it is a new repository now
 
 > **Preface (optional):** A subtle reflection before diving into the technical details, feel free to skip to main content.
 
