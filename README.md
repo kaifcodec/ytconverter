@@ -109,8 +109,13 @@ ytconverter -S
 ```
 
 ---
+## ❤️ Support the project
 
+If this project helps you, consider supporting its development:
 
+**BTC (SegWit):** `bc1q0dzkuav8lq9lwu7gc457vwlda4utfcr5hpv7ka`
+
+---
 
 ### If you found this tool helpful leave a star that will motivate me to maintain this project and add new features 
 
