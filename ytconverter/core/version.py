@@ -9,8 +9,8 @@ def check_version():
         remote = httpx.get(PYPI_VERSION_URL, timeout=3).json()["info"]["version"]
     except Exception as e:
         print(e)
-        exit()
-        return None, None
+        local_version, _ = load_local_version()
+        return local_version, None
     local_version, version_type = load_local_version()
     return local_version, remote
 
